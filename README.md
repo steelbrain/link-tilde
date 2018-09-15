@@ -1,11 +1,11 @@
-# Tilde-Imports
+# Link-Tilde
 
-Tilde imports creates a symlink in `node_modules/~` to your configured directory, so you don't have to do voodoo to get ESLint, Flowtype and Babel to get nicer import paths.
+Link Tilde creates a symlink in `node_modules/~` to your configured directory, so you don't have to do voodoo to get ESLint, Flowtype and Babel to get nicer import paths.
 
 ### Installation
 
 ```
-npm install --save tilde-imports
+npm install --save link-tilde
 ```
 
 ### Usage
@@ -15,7 +15,10 @@ In your package.json
 ```json
 {
   // ... stuff
-  "tildeDirectory": "./src"
+  "tildeDirectory": "./src",
+  "scripts": {
+    "postinstall": "link-tilde"
+  }
 }
 ```
 

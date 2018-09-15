@@ -1,6 +1,6 @@
 {
   "name": "link-tilde",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "bin": {
     "link-tilde": "./lib/index.js"
   },

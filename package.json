@@ -2,11 +2,9 @@
   "name": "tilde-imports",
   "version": "0.0.0",
   "description": "PHP serialize/unserialize in Javascript",
-  "main": "lib/index.js",
   "scripts": {
     "lint": "eslint .",
-    "build": "sb-babel-cli src -o lib",
-    "watch": "npm run build -- -w"
+    "postinstall": "node lib/index.js"
   },
   "repository": {
     "type": "git",
@@ -21,5 +19,7 @@
   "devDependencies": {
     "eslint-config-steelbrain": "^5.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }

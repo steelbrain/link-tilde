@@ -1,25 +1,27 @@
 {
-  "name": "tilde-imports",
-  "version": "0.0.0",
+  "name": "link-tilde",
+  "version": "0.0.1",
+  "bin": {
+    "link-tilde": "./lib/index.js"
+  },
   "description": "PHP serialize/unserialize in Javascript",
-  "main": "lib/index.js",
   "scripts": {
-    "lint": "eslint .",
-    "build": "sb-babel-cli src -o lib",
-    "watch": "npm run build -- -w"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/steelbrain/tilde-imports.git"
+    "url": "git+https://github.com/steelbrain/link-tilde.git"
   },
   "author": "steelbrain",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/steelbrain/tilde-imports/issues"
+    "url": "https://github.com/steelbrain/link-tilde/issues"
   },
-  "homepage": "https://github.com/steelbrain/tilde-imports#readme",
+  "homepage": "https://github.com/steelbrain/link-tilde#readme",
   "devDependencies": {
     "eslint-config-steelbrain": "^5.0.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "mkdirp": "^0.5.1"
+  }
 }

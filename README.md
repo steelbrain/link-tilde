@@ -1,6 +1,6 @@
 # Link-Tilde
 
-Link Tilde creates a symlink in `node_modules/~` to your configured directory, so you don't have to do voodoo to get ESLint, Flowtype and Babel to get nicer import paths.
+Link Tilde creates a symlink in `node_modules/~` to your configured directory, so you don't have to do voodoo to get ESLint and Flowtype to get nicer import paths.
 
 ### Installation
 
@@ -8,19 +8,24 @@ Link Tilde creates a symlink in `node_modules/~` to your configured directory, s
 npm install --save link-tilde
 ```
 
-### Usage
+### Setup
 
-In your package.json
+Merge this into your `package.json` file
 
 ```json
 {
-  // ... stuff
   "tildeDirectory": "./src",
   "scripts": {
     "postinstall": "link-tilde"
   }
 }
 ```
+
+and run `npx link-tilde` manually (firs time).
+
+### Usage
+
+After the setup, you can start requiring modules like `~/something` in your project, and they should work without an issue.
 
 ### License
 

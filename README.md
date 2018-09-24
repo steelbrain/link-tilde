@@ -21,7 +21,7 @@ Merge this into your `package.json` file
 }
 ```
 
-and run `npx link-tilde` manually (firs time).
+and run `npx link-tilde` manually (first time).
 
 ### Usage
 

@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint ."
   },
+  "files": ["lib/index.js"],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steelbrain/link-tilde.git"

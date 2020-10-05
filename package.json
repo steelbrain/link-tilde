@@ -21,6 +21,9 @@
   "devDependencies": {
     "eslint-config-steelbrain": "^5.0.2"
   },
+  "engines": {
+    "node": ">= 10"
+  },
   "dependencies": {
     "mkdirp": "^0.5.1"
   }

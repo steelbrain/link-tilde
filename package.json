@@ -4,7 +4,7 @@
   "bin": {
     "link-tilde": "./lib/index.js"
   },
-  "description": "PHP serialize/unserialize in Javascript",
+  "description": "Create symlink in node_modules/~",
   "scripts": {
     "lint": "eslint ."
   },
